@@ -1,3 +1,12 @@
+@font-face
+{
+font-family: wholeMessy;
+src: url('../fonts/wholemessy-webfont.eot'),
+     url('../fonts/wholemessy-webfont.svg'),
+     url('../fonts/wholemessy-webfont.ttf'),
+     url('../fonts/wholemessy-webfont.woff');
+}
+
 body {
 	background: #eee;
 	color: #333;
@@ -19,6 +28,8 @@ h1 {
 
 #timeline li {
 	position:relative;
+	border: 1px solid #2f2f2f;
+	height: 250px;
 }
 
 #timelinenav {
@@ -78,8 +89,8 @@ h1 {
 	width: 33%;
 	height: 240px;
 	top: 0px;
-	padding: 5px;
-	background: rgba(0, 110, 83, 0.5); 
+	padding: 10px;
+	background: #2f2f2f url('http://www.wholefoodsmarket.com/sites/all/themes/wholefoods/images/wfm-chalk-bg.jpg') top left repeat; 
 }
 
 .timeline-wrap p, .timeline-wrap h3 {
@@ -87,9 +98,9 @@ h1 {
 }
 
 .timeline-wrap h3 {
-	font-size: 13px;
+	font-family: wholeMessy, 'Helvetica Nueue';
+	font-size: 18px;
 	font-weight:normal;
-	font-style: italic;
 	margin: 0 0 10px 0;
 	text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
 }
@@ -105,7 +116,7 @@ h1 {
 }
 
 .timeline-wrap.columns2 {
-	width: 67%;
+	width: 60%;
 }
 
 .timeline-wrap.columns2 p:nth-of-type(1) {
